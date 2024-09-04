@@ -1,0 +1,95 @@
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes buttonHover {
+    from {
+        background-color: darkslateblue;
+    }
+    to {
+        background-color: #0056b3;
+    }
+}
+
+/* Applying animations */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url(IMAGES/image.png) no-repeat;
+    background-size: cover;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.container {
+    text-align: center;
+    background: url(images/img\ glii.jpg) no-repeat;
+    background-size: cover;
+    padding: 20px;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
+    height: 300px;
+    animation: slideUp 1s ease-out;
+    border-radius: 15px; /* Added border-radius for softer corners */
+}
+
+input[type="number"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 150px;
+    border-radius: 5px; /* Added border-radius for softer corners */
+}
+
+p {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: darkorchid;
+    animation: fadeIn 1s ease-in 0.5s;
+}
+
+h1 {
+    color: hotpink;
+    animation: slideUp 1s ease-out;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: darkslateblue;
+    color: #fff;
+    border: none;
+    border-radius: 10px; /* Added border-radius for softer corners */
+    cursor: pointer;
+    height: 40px;
+    animation: fadeIn 1s ease-in 0.5s;
+}
+
+button:hover {
+    animation: buttonHover 0.3s ease-in-out forwards;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    animation: fadeIn 1s ease-in 0.5s;
+}
